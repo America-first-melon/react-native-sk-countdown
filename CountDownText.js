@@ -10,14 +10,14 @@ this.refs.countDownText.start();
 this.refs.countDownText.end();
 */
 
-'use strict'
 
-var React = require('react-native');
+import React,{Component} from 'react';
 
-var {
+import {
   StyleSheet,
   Text,
-} = React;
+} from 'react-native';
+
 
 var update = React.addons.update,
     countDown = require('./countDown');
@@ -142,4 +142,4 @@ var CountDownText = React.createClass({
   }
 });
 
-module.exports = CountDownText;
+export default CountDownText;
